@@ -161,7 +161,19 @@ function SplashScreen({ onDone }) {
           fontFamily: "'Cormorant Garamond', serif",
           fontWeight: 300,
           color: "#F2EDE6",
+          marginBottom: 8,
+          animation: "fadeUp 0.5s ease both"
+        }}>WARDROBE</h1>
+        <p style={{
+          fontSize: 14,
+          color: "#9A9590",
+          letterSpacing: 1,
           marginBottom: 32,
+          fontFamily: "'DM Sans', sans-serif",
+          animation: "fadeUp 0.6s ease both"
+        }}>Your digital wardrobe ✨</p>
+        <button onClick={handleEnter} style={{
+
           animation: "fadeUp 0.5s ease both"
         }}>WARDROBE</h1>
         <button onClick={handleEnter} style={{
