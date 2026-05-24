@@ -173,10 +173,6 @@ function SplashScreen({ onDone }) {
           animation: "fadeUp 0.6s ease both"
         }}>Your digital wardrobe ✨</p>
         <button onClick={handleEnter} style={{
-
-          animation: "fadeUp 0.5s ease both"
-        }}>WARDROBE</h1>
-        <button onClick={handleEnter} style={{
           padding: "12px 24px",
           border: "1px solid #C5A059",
           borderRadius: 6,
