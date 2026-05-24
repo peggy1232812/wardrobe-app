@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/page.jsx << 'EOF'
 'use client';
 
 import { useState, useEffect } from "react";
@@ -253,7 +252,6 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
       <style>{G}</style>
 
       <div style={{ position: "relative", zIndex: 2, width: "88%", maxWidth: 360, animation: "slideUp 0.32s cubic-bezier(0.32, 0.72, 0, 1) both" }}>
-        {/* Language selector */}
         <div style={{ display: "flex", gap: 6, marginBottom: 20, justifyContent: "center" }}>
           {["zh-TW", "zh-CN", "en", "ja"].map(lang => (
             <button key={lang} onClick={() => window.location.reload()} style={{
@@ -270,7 +268,6 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
           ))}
         </div>
 
-        {/* Title */}
         <div style={{ textAlign: "center", marginBottom: 24 }}>
           <h2 style={{
             fontSize: 24,
@@ -280,7 +277,6 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
           }}>{t.selectAccount}</h2>
         </div>
 
-        {/* Account list */}
         <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 20 }}>
           {accounts.map(acc => (
             <button key={acc.username} onClick={() => {
@@ -302,7 +298,6 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
           ))}
         </div>
 
-        {/* New account input */}
         <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
           <input type="text" value={newName} onChange={e => setNewName(e.target.value)} placeholder={t.newAccountName} style={{
             flex: 1,
@@ -327,7 +322,6 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
           }}>{t.add}</button>
         </div>
 
-        {/* Tab switcher */}
         <div style={{ display: "flex", background: "rgba(30,30,30,0.7)", borderRadius: 30, padding: 4, marginBottom: 16 }}>
           {["login", "register"].map(m => (
             <button key={m} onClick={() => {
@@ -353,7 +347,6 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
           ))}
         </div>
 
-        {/* Form */}
         <div style={{ background: "rgba(30,30,30,0.85)", border: `1px solid ${C.goldLine}`, borderRadius: 22, padding: "26px 24px 28px" }}>
           <div style={{ marginBottom: 14 }}>
             <div style={{ fontSize: 9, color: C.gold, letterSpacing: 3, marginBottom: 7, fontFamily: "'DM Sans', sans-serif" }}>USERNAME</div>
@@ -428,6 +421,7 @@ function LoginScreen({ onLogin, accounts, setAccounts, language }) {
     </div>
   );
 }
+
 export default function App() {
   const [screen, setScreen] = useState("splash");
   const [language, setLanguage] = useState("zh-TW");
@@ -512,4 +506,3 @@ export default function App() {
     </div>
   );
 }
-EOF
