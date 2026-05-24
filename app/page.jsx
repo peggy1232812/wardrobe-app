@@ -13,16 +13,16 @@ const C = {
 
 /* ─── SEED DATA ─────────────────────────────────────────────── */
 const ITEMS_INIT = [
-  {id:1,  name:"Silk Slip Dress",     brand:"Totême",         cat:"洋裝", price:18500, worn:7,  emoji:"·", color:"#6B4E71"},
-  {id:2,  name:"Tailored Blazer",     brand:"The Row",        cat:"外套", price:42000, worn:12, emoji:"·", color:"#2C2C2C"},
-  {id:3,  name:"Cashmere Knit",       brand:"Loro Piana",     cat:"上衣", price:28000, worn:18, emoji:"·", color:"#C4A882"},
-  {id:4,  name:"Wide-leg Trousers",   brand:"Lemaire",        cat:"下著", price:15800, worn:9,  emoji:"·", color:"#4A4440"},
-  {id:5,  name:"Ballet Flats",        brand:"Repetto",        cat:"鞋履", price:9800,  worn:22, emoji:"·", color:"#D4A5A5"},
-  {id:6,  name:"Structured Tote",     brand:"Polène",         cat:"配件", price:12500, worn:30, emoji:"·", color:"#8B7355"},
-  {id:7,  name:"Linen Shirt Dress",   brand:"Arket",          cat:"洋裝", price:6200,  worn:4,  emoji:"·", color:"#E8DCC8"},
-  {id:8,  name:"Leather Mini Skirt",  brand:"Saint Laurent",  cat:"下著", price:35000, worn:2,  emoji:"·", color:"#1A1A1A"},
-  {id:9,  name:"Slingback Heels",     brand:"Manolo Blahnik", cat:"鞋履", price:52000, worn:1,  emoji:"·", color:"#C8A882"},
-  {id:10, name:"Pearl Drop Earrings", brand:"Mikimoto",       cat:"配件", price:68000, worn:5,  emoji:"·", color:"#F0EDE8"},
+  {id:1,  name:"Silk Slip Dress",     brand:"Totême",         cat:"洋裝", price:1850, worn:7,  emoji:"·", color:"#6B4E71"},
+  {id:2,  name:"Tailored Blazer",     brand:"The Row",        cat:"外套", price:4200, worn:12, emoji:"·", color:"#2C2C2C"},
+  {id:3,  name:"Cashmere Knit",       brand:"Loro Piana",     cat:"上衣", price:2800, worn:18, emoji:"·", color:"#C4A882"},
+  {id:4,  name:"Wide-leg Trousers",   brand:"Lemaire",        cat:"下著", price:1580, worn:9,  emoji:"·", color:"#4A4440"},
+  {id:5,  name:"Ballet Flats",        brand:"Repetto",        cat:"鞋履", price:980,  worn:22, emoji:"·", color:"#D4A5A5"},
+  {id:6,  name:"Structured Tote",     brand:"Polène",         cat:"配件", price:1250, worn:30, emoji:"·", color:"#8B7355"},
+  {id:7,  name:"Linen Shirt Dress",   brand:"Arket",          cat:"洋裝", price:620,  worn:4,  emoji:"·", color:"#E8DCC8"},
+  {id:8,  name:"Leather Mini Skirt",  brand:"Saint Laurent",  cat:"下著", price:3500, worn:2,  emoji:"·", color:"#1A1A1A"},
+  {id:9,  name:"Slingback Heels",     brand:"Manolo Blahnik", cat:"鞋履", price:5200, worn:1,  emoji:"·", color:"#C8A882"},
+  {id:10, name:"Pearl Drop Earrings", brand:"Mikimoto",       cat:"配件", price:6800, worn:5,  emoji:"·", color:"#F0EDE8"},
 ];
 const DIARY_INIT = {
   "2026-05-20":{note:"Brand strategy meeting", itemIds:[2,3,4,6], photo:null},
@@ -32,10 +32,6 @@ const DIARY_INIT = {
 const CATS   = ["全部","上衣","下著","外套","洋裝","鞋履","配件"];
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-const ACCOUNTS_DEFAULT = [
-  {id:1, name:"Alice Chen", avatar:"👩‍💼"},
-  {id:2, name:"Bob Wong",   avatar:"👨‍💼"},
-];
 
 // Currency/Language config
 const CURRENCY_OPTIONS = [
